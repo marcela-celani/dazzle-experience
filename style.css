@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Sudbury+Basin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #F0EFD3; /* Cor de fundo do body */
+}
+
+header {
+    background-color: #26422B;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+}
+
+header img {
+    height: 10vh;
+}
+
+.section {
+    padding: 20px;
+}
+
+.section.capa {
+    background-color: #26422B;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    height: 90vh;
+    position: relative;
+}
+
+.section.capa img {
+    position: absolute;
+    top: -10vh;
+    right: 20px;
+    bottom: 10px;
+    height: 100vh;
+}
+
+.section.capa h1 {
+    margin-left: 120px;
+    font-size: 128px;
+    font-family: 'Sudbury Basin', serif;
+    color: #4CB148;
+}
+
+.section.capa .get {
+    display: block;
+    color: #A1C425;
+    font-size: 138px;
+}
+
+.section.capa .together {
+    display: block;
+    color: #4CB148;
+}
+
+.section.imagem-grande {
+    position: relative;
+    height: 892px;
+    width: 100%; /* Ajuste a largura para 100% */
+    background-image: url('./assets/foto-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section.imagem-grande .texto {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    color: #1B8B59;
+    font-size: 54px;
+    font-family: 'Sudbury Basin', serif;
+    font-weight: bold;
+}
+
+.section.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1600px; /* Alinha verticalmente os itens ao centro */
+}
+
+.section.conteudo .texto {
+    width: 75%;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    padding-left: 128px;
+}
+
+.section.conteudo h2 {
+    margin-top: 0;
+    font-size: 64px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    color: #4DB149;
+    margin-bottom: 20px; /* Espaçamento generoso abaixo dos títulos */
+}
+
+.section.conteudo hr {
+    width: 158px;
+    border: 4px solid #4DB149;
+    margin-bottom: 20px;
+}
+
+.section.conteudo p {
+    font-size: 32px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: #223D2A;
+    margin-bottom: 20px; /* Espaçamento generoso abaixo dos parágrafos */
+}
+
+.section.conteudo img {
+    width: 350px; /* Define a largura da imagem */
+    height: 579px; /* Define a altura da imagem */
+    margin-right: 128px;
+
+}
+
+.section.formulario {
+    background-color: #4DB049;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+    color: #223D2A;
+    height: 800px;
+}
+
+.section.formulario .texto {
+    width: 40%;
+}
+
+.section.formulario hr {
+    width: 158px;
+    border: 4px solid #F0EFD3;
+    margin-bottom: 20px;
+}
+
+.section.formulario h2 {
+    font-size: 64px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    color: #F0EFD3; /* Cor igual ao background do body */
+    margin-bottom: 20px; /* Espaçamento generoso abaixo do título */
+}
+
+.section.formulario p {
+    font-size: 32px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: #223D2A;
+    margin-bottom: 20px; /* Espaçamento generoso abaixo do parágrafo */
+}
+
+.section.formulario form {
+    width: 50%;
+}
+
+.section.formulario form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section.formulario form input,
+.section.formulario form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.section.formulario form button {
+    padding: 10px 20px;
+    background-color: #26422B;
+    color: #F0EFD3;
+    border: none;
+    cursor: pointer;
+}
+
+.faixa-fotos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faixa-fotos div {
+    width: 33.33%;
+    height: 455px; /* Defina a altura desejada para as fotos */
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #F0EFD3; /* Cor de fundo igual ao body */
+    color: #223D2A; /* Cor dos textos igual aos parágrafos */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer img {
+    height: 100px;
+    margin-left: 20px;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+footer .social div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer .social div img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 5px;
+        height: 80px;
+    }
+
+    header img {
+        height: 70px;
+    }
+
+
+    
+    .section.capa {
+        height: 80vh;
+
+        img {
+            height: 80vh;
+            top: -60px;
+        }
+    }
+
+    .section.capa h1 {
+        font-size: 48px;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .section.capa .get {
+        font-size: 50px;
+    }
+
+    .section.capa .together {
+        font-size: 48px;
+    }
+
+    .section.imagem-grande {
+        height: 300px;
+        background-position: center;
+    }
+
+    .section.imagem-grande .texto {
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+    }
+
+    .section.conteudo {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .section.conteudo .texto {
+        width: 90%;
+        padding-left: 0;
+    }
+
+    .section.conteudo img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: none;
+    }
+
+    .section.formulario {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .section.formulario .texto {
+        width: 90%;
+        text-align: center;
+    }
+
+    .section.formulario form {
+        width: 100%;
+    }
+
+    .faixa-fotos {
+        flex-direction: column;
+    }
+
+    .faixa-fotos div {
+        width: 100%;
+        height: 250px; /* Ajuste conforme necessário */
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        font-size: 12px;
+        text-align: center; /* Adiciona centralização do texto */
+    }
+
+    footer img {
+        height: 80px;
+        margin: 10px 0; /* Adiciona margens para separar o logo do restante do conteúdo */
+    }
+
+    footer .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Alinha os itens no centro */
+        margin-right: 0;
+    }
+
+    footer .social div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Ajusta o espaçamento entre os itens */
+        width: 100%; /* Garante que os itens não excedam a largura da tela */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        padding: 0 10px; /* Adiciona padding para evitar o corte do texto */
+    }
+
+    footer .social div img {
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    footer .social div p {
+        font-size: 12px; /* Ajusta o tamanho da fonte dos textos */
+    }
+}
